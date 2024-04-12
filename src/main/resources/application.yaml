@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  rabbitmq:
+    addresses: ${RABBIT_ADDRESS:localhost:5672}
+    username: test
+    password: test
+
+rabbit:
+  rate-queue: rate_queue
+
+nbp:
+  url: http://api.nbp.pl/api/exchangerates
+  endpoint: /tables/c
